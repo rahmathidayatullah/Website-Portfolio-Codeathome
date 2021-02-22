@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins',
+    sans-serif;
+}
+.text-shadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.shadowImage{
+    box-shadow: -10px 16px 15px rgba(0, 0, 0, 0.09);
+}
+.text-greenAqua{
+    color: #A3FCEE;
+}
+.text-greenPrimary {
+    color: #55C1B0;
+}
+.border-greenPrimary {
+    border-color: #55C1B0;
+}
+
+.hoverBottom{
+    position: relative;
+    transition: 0.3s;
+
+}
+.w-27{
+    width: 27rem;
+}
+.h-27{
+    height: 27rem;
+}
+.hoverBottom:hover:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: -7px;
+    left: 50%;
+    height: 3px;
+    background-color: white;
+    z-index: 9999;
+    transform: translateX(-50%);
+}
+
+/* 2 */
+.text-grey{
+    color: #9D9D9D;
+}
+.text-greyHover{
+    color: #9D9D9D;
+}
+.text-greyHover:hover:after {
+    content: '';
+    position: absolute;
+    width: 44%;
+    bottom: -7px;
+    left: 50%;
+    height: 3px;
+    background-color: #55C1B0;
+    z-index: 9999;
+    transform: translateX(-30%);
+}
+.text-greyHover:hover{
+    color: #55C1B0;
+}
+.shadowCard{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+.gradientColor{
+    background: linear-gradient(180deg, #5CCCBA 0%, #34B7C9 100%);
+}
+
+.overflow-scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+.overflow-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.overflow-scroll::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 7px;
+}
+
+/* Handle on hover */
+.overflow-scroll::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+}
