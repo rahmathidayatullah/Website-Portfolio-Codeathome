@@ -11,17 +11,74 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="h-screnn relative">
+    <div class="relative">
+
+        <div class="h-screen">
         <!-- navbar -->
-        <nav class="w-full justify-between items-center">
-            <div class="flex items-center">
-                <img src="" />
-                <p>Back</p>
+        <nav class="w-full p-5 bg-GreenSecondary h-3/4 text-center relative">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="assets/Icons/profile/back.png" />
+                    <p class="ml-3 text-white">Back</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="assets/Icons//profile/homeicon.png" />
+                    <p class="ml-3 text-white">Home</p>
+                </div>
             </div>
-            <div class="flex items-center">
-                
+            <h1 class="text-white font-bold text-2xl lg:text-4xl mt-16">Rahmat hidayatullah</h1>
+            <p class="text-white mt-5 text-xl lg:text-2xl">“Nobody care about your story until u  win, so first win!”</p>
+            <!-- wrap img rounded -->
+            <div class="rounded-full h-56 w-56 md:h-80 md:w-80 shadowImage2 absolute left-1/2 bottom-0 xl:-bottom-1/4  transform -translate-x-1/2 -bottom-1/3 border-8 border-white overflow-hidden">
+            <img src="assets/Icons/profile/IMG_20180312_134702.jpg" />
             </div>
+
         </nav>
+
+        </div>
+
+        <!-- content navbar -->
+        <div class="text-center mt-5">
+            <ul class="flex justify-center align-center">
+                <li class="list-item active">
+                    <p class="text active">Profile</p>
+                </li>
+                <li class="mx-14 list-item">
+                    <p class="text">Career</p>
+                </li>
+                <li class="list-item">
+                    <p class="text">Portfolio</p>
+                </li>
+             </ul>
+             
+        </div>
+
+
+        <div class="text-center flex flex-col items-center justify-center">
+            <!-- change content -->
+        <h1 class="text-2xl lg:text-4xl text-black font-bold mt-10 lg:mt-20">Rahmat Hidayatullah</h1>
+             <p class="text-grey text-xl lg:text-2xl mt-5">Software Engineer, Frontend</p>
+             <p class="text-grey text-xl lg:text-2xl">Lampung Indonesia</p>
+
+        <h1 class="text-2xl lg:text-4xl text-black font-bold mt-10 lg:mt-20">About</h1>
+             <p class="text-grey text-sm lg:text-2xl mt-5 px-5 lg:px-0 lg:w-1/2"> Software Engineer who specialized in frontend side, but have an ability to code in backend side too. Very passionate about modern mobile and web technology using JavaScript while taking into consideration the latest trends and techniques.</p>
+
+             <div class="flex items-center p-5 bg-white dropSwadow rounded-md my-20">
+            <img class="mr-10" src="assets/Icons/profile/Vector.png" />
+            <img class="mr-10" src="assets/Icons/profile/facebook.png" />
+            <img class="mr-10" src="assets/Icons/profile/github.png" />
+            <img src="assets/Icons/profile/youtube.png" />
+
+        </div>
+        <!-- end change content -->
+
+        <div class="footer bg-GreenSecondary p-4 mt-5 w-full">
+            <p class="text-white text-center">© 2021 Codeathome  • Indonesia</p>
+        </div>
+        
+        </div>
+        
+
 
     </div>
 

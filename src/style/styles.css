@@ -13,6 +13,10 @@ body{
 .shadowImage{
     box-shadow: -10px 16px 15px rgba(0, 0, 0, 0.09);
 }
+.shadowImage2{
+    box-shadow: 2px 8px 27px rgba(0, 0, 0, 0.25);
+}
+
 .text-greenAqua{
     color: #A3FCEE;
 }
@@ -26,6 +30,14 @@ body{
 .hoverBottom{
     position: relative;
     transition: 0.3s;
+
+}
+.hoverBottom.activegreen {
+    color: #55C1B0;
+
+}
+.hoverBottom.active{
+    color: white;
 
 }
 .w-27{
@@ -45,12 +57,37 @@ body{
     z-index: 9999;
     transform: translateX(-50%);
 }
+.hoverBottom.active:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: -7px;
+    left: 50%;
+    height: 3px;
+    background-color: white;
+    z-index: 9999;
+    transform: translateX(-50%);
+}
+.hoverBottom.activegreen:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: -7px;
+    left: 50%;
+    height: 3px;
+    background-color: #55C1B0;
+    z-index: 9999;
+    transform: translateX(-50%);
+}
 
 /* 2 */
 .text-grey{
     color: #9D9D9D;
 }
 .text-greyHover{
+    color: #9D9D9D;
+}
+.text-greyHoverBold{
     color: #9D9D9D;
 }
 .text-greyHover:hover:after {
@@ -64,8 +101,19 @@ body{
     z-index: 9999;
     transform: translateX(-30%);
 }
-.text-greyHover:hover{
+/* .text-greyHover:hover{
     color: #55C1B0;
+    cursor: pointer;
+} */
+.text-greyHoverBold:hover{
+    color: #55C1B0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.text-greyHoverBold.active{
+    color: #55C1B0;
+    cursor: pointer;
+    font-weight: bold;
 }
 .shadowCard{
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
@@ -95,4 +143,61 @@ body{
 /* Handle on hover */
 .overflow-scroll::-webkit-scrollbar-thumb:hover {
     background: #cccccc;
+}
+
+.bg-GreenSecondary{
+    background-color: #61C8B5;
+}
+
+.list-item {
+    transition: 0.3s;
+
+}
+
+.list-item:hover{
+    border-bottom: 3px solid #3CBBC6;
+
+}
+.list-item.active{
+    border-bottom: 3px solid #3CBBC6;
+
+}
+
+
+
+.list-item .text{
+    color: #9D9D9D;
+    transition: 0.3s;
+}
+.list-item .text:hover{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.list-item .text.active{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.dropSwadow{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.wrapShadow{
+    box-shadow: 0px -1px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 34.5px;
+}
+
+.text-shadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.minw-5{
+    min-width: 1.28rem;
+}
+.minh-5 {
+    min-height: 1.25rem;
 }
